@@ -1,0 +1,141 @@
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(32, 33, 36);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  gap: 20px;
+  padding: 15px 20px 0 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+display: flex;
+flex-direction: column;
+margin: 190px auto;
+gap: 30px;
+}
+
+.google {
+max-width: 272px;
+display: block;
+margin: auto;
+}
+
+input {
+    height: 44px;
+    background: #202124;
+    border: 1px solid #5f6368;
+    border-radius: 24px;
+    margin:  auto;
+    width: 584px;
+    display: block;
+    padding: 0px 8px 0 14px;
+    box-shadow: none;
+    font-weight: 400;
+    color: white;
+    align-items: center;
+  
+  }
+
+input:hover {
+  box-shadow: 0 1px 6px 0 #171717;
+    background: #303134;
+    border-color: rgba(223,225,229,0);
+}
+
+input:focus {
+  outline: none;
+}
+
+.buttons {
+  margin: 0 auto;
+  gap: 10px;
+  display: flex;
+}
+
+button {
+  background: #303134;
+  border: none;
+  padding: 10px 13px;
+  color: white;
+  border-radius: 4px;
+}
+
+button:hover {
+cursor: pointer;
+border: 0.5px #79797a solid;
+}
+
+.escrita {
+ margin: 0 auto;
+ text-align: center;
+
+ font-size: 12px;
+ color: #bdc1c6;
+}
+
+.escrita p + p {
+  margin-top: 30px;
+}
+
+.escrita p a {
+  color:#8ab4f8 ;
+  text-decoration: none;
+}
+
+.escrita p a:hover {
+  text-decoration: underline;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #171717;
+}
+
+footer p {
+  color: #9aa0a6 ;
+  padding: 15px;
+}
+
+.rodape ul a {
+  color: #9aa0a6 ;
+  text-decoration: none;
+}
+
+hr {
+ border: 1px solid #3c4043;
+}
+
+.rodape ul {
+  list-style: none;
+  padding: 15px;
+  display: flex;
+  gap: 25px;
+  justify-content: ;
+}
+
+.rodape ul li:hover {
+  text-decoration: underline;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-evenly;
+}

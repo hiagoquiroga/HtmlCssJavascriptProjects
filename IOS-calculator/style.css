@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: black;
+  --result-color: white;
+  --bg-percent-color: #a5a5a5;
+  --bg-percent-color-hover: #cfcece;
+  --bg-numbers-color: #343434;
+  --bg-numbers-color-hover: #686868;
+  --bg-item3-color: #ff9f0a;
+  --bg-item3-color-hover: #ffffff;
+  --bg-item1-color: #a5a5a5;
+}
+
+html, body #fullheight {
+  min-height: 100% !important;
+  height: 100%;
+  font-family: 'SF Pro Display Regular', sans-serif;
+  background-color: var(--bg-color);
+}
+
+.container {
+  height: 100%;
+  background-color: var(--bg-color);
+  position: absolute;
+  bottom: 12%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  color: var(--result-color);
+  height: 39%;
+  position: absolute;
+  top: 7%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+
+.result span {
+  font-size: 110px;
+  justify-self: flex-end;
+}
+
+.buttons {
+  width: 330px;
+  height: 60%;
+  background-color: var(--bg-color);
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 20px;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 12%;
+  left: 0;
+  right: 0;
+
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  color: var(--result-color);
+  border-radius: 100%;
+  width: 95px;
+  height: 95px;
+  padding: 10px;
+  cursor: pointer;
+  align-self: center;
+  justify-self: center;
+  font-family: 'SF Pro Display Regular', sans-serif;
+}
+
+.item1:hover,
+.percent:hover {
+  background-color: var(--bg-percent-color-hover);
+  transition: 0.2s;
+}
+
+.item3:hover {
+  background-color:var(--bg-item3-color-hover);
+  color:var(--bg-item3-color);
+  transition: 0.2s;
+}
+
+.numbers:hover,
+.comma:hover {
+  background-color:var(--bg-numbers-color-hover);
+  transition: 0.2s;
+}
+
+.percent,
+.item1,
+.item3,
+.numbers,
+.comma,
+.itemZero {
+  border: none;
+}
+
+.percent {
+  background-color: var(--bg-percent-color);
+  color: var(--bg-color);
+}
+
+.item1 {
+  background-color: var(--bg-item1-color);
+}
+
+.item3 {
+  background-color: var(--bg-item3-color);
+}
+
+.numbers, .comma {
+  background-color: var(--bg-numbers-color);
+}
+
+.negative, .clear {
+  color: var(--bg-color);
+}
+
+.itemZero {
+  background-color: var(--bg-numbers-color);
+  width: 200px;
+  border-radius: 135px;
+  grid-column: span 2;
+}
+
+.selectedSigh {
+  background-color: white;
+  color: var(--bg-item3-color) ;
+}
+
+.changedStyles {
+  font-size: 10px;
+}
