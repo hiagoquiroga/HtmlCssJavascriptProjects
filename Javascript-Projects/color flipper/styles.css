@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(167, 167, 167);
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5em;
+    align-items: center;
+    background-color: white;
+    padding: 1.5em 10em;
+    box-shadow: 2em;    
+    -webkit-box-shadow: 7px 8px 13px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 7px 8px 13px 0px rgba(0,0,0,0.21);
+    box-shadow: 7px 8px 13px 0px rgba(0,0,0,0.21);
+    
+}
+
+nav h4 {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: rgb(45, 181, 255);
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2em;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.nav-links li a {
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40vw;
+    max-width: 350px;
+}
+
+.container h2 {
+    font-family: 'Montserrat';
+    font-size: 24px;
+
+    border-radius: 1em;
+    padding: 1em;
+
+    background-color: black;
+    color: white;
+}
+
+.container button {
+    margin-top: 2.5em;
+
+    font-family: 'Montserrat';
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    border-radius: 9999px;
+
+    padding: 1em 3em; 
+
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+.container button:hover {
+    background: black;
+    color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.color {
+    color: rgb(167, 167, 167);
+}
+
+@media screen and (min-width: 660px) {
+    .container {
+        max-width: 550px;
+        margin-top: 30vw;
+    }
+
+    .container h2 {
+        font-size: 30px;
+    }
+}    
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 660px;
+        margin-top: 17vw;
+    }
+    .container h2 {
+        font-size: 40px;
+    }
+}    

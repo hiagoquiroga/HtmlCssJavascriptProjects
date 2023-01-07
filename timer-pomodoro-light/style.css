@@ -1,0 +1,117 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #E5E5E5;
+
+  --bg-btn-color: #E1E1E6;
+
+  --btn-select: #02799D;
+
+  --base-color: 194;
+  --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+  --primary-color: hsl(var(--base-color), 100%, 63%);
+  --btn-fill: #323238;
+
+  --timer-color: #29292E;
+  --text-color: #FFFFFF;
+
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--timer-color);
+
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: medium;
+
+  margin-top: -2.7rem;
+
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.play svg path,
+.stop svg path,
+.forest svg path,
+.cafe svg path,
+.fireplace svg path,
+.rain svg path, 
+.plus svg path,
+.minus svg path,
+.mute svg path {
+  fill: var(--btn-fill);
+}
+
+button svg {
+  width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+.all {
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  width: 32.1rem;
+}
+
+#timer {
+  font-size: clamp(4rem, 4rem + 10vw, 12.6rem);
+  display: flex;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+#controls {
+
+  margin: 0 auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
+  width: clamp(10rem, 10rem + 30vw, 31.2rem);
+  height: clamp(8rem, 5rem + 10vh, 4.8rem);
+}
+
+.ambiences {
+  display: grid;
+  grid-template-columns: auto auto ;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  margin: auto;
+}
+
+.ambiences button {
+  background-color: var(--bg-btn-color);
+  border-radius: 2.4rem;
+  width: clamp(5rem, 5rem + 15vw, 13.8rem);
+  height: clamp(8rem, 5rem + 15vh, 15.2rem);
+}
+
+.ambiences button.clickon,
+ button.clickon svg path{
+  fill: var(--text-color);
+  background-color: var(--btn-select);
+  transition: 0.2s;
+
+}
+
